@@ -69,10 +69,16 @@ apply plugin: 'com.google.gms.google-services'
 $ ## 📸 Screenshots
 
 ### 👤 AdminNeoPark
-![AdminNeoPark](screenshots/AdminPanel_UI/Home_Admin.png)
+![Admin Panel Home](screenshots/AdminPanel_UI/Home_Admin.png)
+![Admin Panel Lot and Slot](screenshots/AdminPanel_UI/LotAndSlot.png)
+![Admin Panel Profile](screenshots/AdminPanel_UI/ProfileAdmin.png)
 
 ### 🛠️ NeoPark
-![NeoPark](screenshots/UserPanel_UI/UserHome.png)
+![User Booking](screenshots/UserPanel_UI/UserBooking.png)
+![User Feedback](screenshots/UserPanel_UI/UserFeedback.png)
+![User Home](screenshots/UserPanel_UI/UserHome.png)
+![User Navigation](screenshots/UserPanel_UI/UserNavigation.png)
+![User Profile](screenshots/UserPanel_UI/UserProfile.png)
 
 
 ![Home_Admin](https://github.com/user-attachments/assets/b46756e0-d820-430b-b2e2-5abb31f4545d)
