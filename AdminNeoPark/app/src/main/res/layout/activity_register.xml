@@ -1,0 +1,212 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:background="@color/royal_blue"
+    tools:context=".RegisterLogin.RegisterActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+            <!--  Registration Title  -->
+
+            <TextView
+                android:id="@+id/fullNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/companyName"
+                android:layout_marginTop="30dp"
+                android:paddingLeft="5dp"
+                android:text="Full Name*"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullNameTextView"
+                android:background="@drawable/squareborder"
+                android:ems="30"
+                android:hint="Enter Full Name"
+                android:minHeight="48dp"
+                android:paddingLeft="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="#726969"
+                android:textSize="18dp" />
+            <!--  Email  -->
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userName"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Email*"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/userEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailTextView"
+                android:background="@drawable/squareborder"
+                android:hint="Enter Email Address"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#726969"
+                android:textSize="18dp" />
+
+            <!--  Mobile Number  -->
+
+            <!--  Password  -->
+            <TextView
+                android:id="@+id/mobileNumberTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userEmailAddress"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Mobile Number*"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/usercontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mobileNumberTextView"
+                android:background="@drawable/squareborder"
+                android:hint="Enter Mobile Number"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#726969"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/passwardTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usercontact"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Password*"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/passwardTextView"
+                android:background="@drawable/squareborder"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#726969"
+                android:textSize="18dp" />
+
+            <!--  Confirm Password  -->
+            <TextView
+                android:id="@+id/confirmPasswardTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Confirm Password*"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/confirmPasswardTextView"
+                android:background="@drawable/squareborder"
+                android:hint="Again Same Password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="#726969"
+                android:textSize="18dp" />
+            <!--  Submit Button  -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submitDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/confirmpassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="#06253C"
+                android:gravity="center"
+                android:text="Continue"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/submitDetails"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/login_page"
+                android:textColor="#00BCD4"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/term_and_cond"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="100dp"
+                android:gravity="center"
+                android:layout_below="@id/login_button"
+                android:textColor="@color/white"/>
+
+
+            <!--  ProgressBar  -->
+            <ProgressBar
+                android:id="@+id/registerProgressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="5dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

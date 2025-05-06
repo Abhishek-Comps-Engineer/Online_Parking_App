@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Admin NeoPark</string>
+    <string name="google_api_key">AIzaSyCygEykM7DtiqlkYL0SMK1cdG4V_Hkizl4</string>
+    <string name="profile_header">Profile</string>
+    <string name="app_slogen">Welocome! To  Our Parking\nGuidance System</string>
+    <string name="register">Admin Register</string>
+    <string name="login_page"><u>Already registered?, Login here</u></string>
+    <string name="register_button">Don’t have an account? Sign up here.</string>
+    <string name="userId">Email Id</string>
+    <string name="userPassword">Password</string>
+    <string name="forgetPassword">Forget password?</string>
+    <string name="slogen">Please register to park safely.</string>
+    <string name="opendrawer">Open Drawer</string>
+    <string name="closedrawer">Close Drawer</string>
+    <string name="term_and_cond">By clicking \'Continue,\' you agree to our Terms\nand Conditions of Service </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_add_parking_bottom">addParkingBottomActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!--    <string name="default_web_client_id">985665963501-htnfhp32j5rr7ihjdmer94ve6i9e5k9a.apps.googleusercontent.com</string>-->
+</resources>

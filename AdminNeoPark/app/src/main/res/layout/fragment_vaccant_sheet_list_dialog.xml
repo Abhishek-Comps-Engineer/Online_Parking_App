@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/list_item_spacing_half"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/list_item_spacing_half"
+    tools:context=".ui.VaccantSheetFragment" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vacant Slots"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/_5sdp"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        android:layout_weight="@integer/material_motion_duration_medium_1"
+        android:layout_height="wrap_content"
+        android:id="@+id/vaccantSlotList"/>
+</LinearLayout>

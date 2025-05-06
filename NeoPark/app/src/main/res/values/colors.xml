@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#DF0B0B</color>
+    <color name="logo_color">#0c0c6b</color>
+    <color name="royal_blue">#384E9B</color>
+    <color name="blue">#384E9B</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="green">#4CAF50</color>
+    <color name="primary">#6200EE</color> <!-- Material Design Primary Color (Deep Purple) -->
+    <color name="primary_dark">#3700B3</color> <!-- Darker Shade -->
+    <color name="primary_light">#BB86FC</color> <!-- Lighter Shade -->
+
+
+</resources>

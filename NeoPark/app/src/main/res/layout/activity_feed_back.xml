@@ -1,0 +1,193 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1A1A2E"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <!-- Back Button -->
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_back"
+                    android:contentDescription="Back"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="16dp" />
+
+                <!-- Title -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="App feedback"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_height="wrap_content">
+
+    <!-- Header Description -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Have something to say? Please fill out the form below with your suggestions, ideas, compliments and improvements. We love getting feedback! We may not be able to respond to every single piece of feedback we get but we will read every single one."
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Required Field Info -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* denotes required fields."
+            android:textColor="#FF0000"
+            android:textSize="12sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Email Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abhishek.907655@gmail.com"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Feedback Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback title *"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/feedback_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_edit_text"
+                android:hint="Min 3 characters"
+                android:inputType="text"
+                android:maxLength="50"
+                android:minHeight="48dp"
+                android:padding="10dp" />
+
+        <!-- App Rating -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How do you feel about the app overall? *"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <!-- 5 Star Rating -->
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1.0"
+                android:layout_marginBottom="16dp" />
+
+
+        </LinearLayout>
+
+        <!-- Feedback -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback *"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/feedback_message"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Min 15 characters"
+            android:gravity="top"
+            android:maxLength="2000"
+            android:background="@drawable/rounded_edit_text"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Checkbox Options -->
+        <CheckBox
+            android:id="@+id/follow_up_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Can we follow up with you about your feedback?"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/support_request_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I agree that this is not a support request *"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/no_personal_info_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I have not included any personal information *"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

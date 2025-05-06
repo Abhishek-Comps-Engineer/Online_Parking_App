@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/dashBoardFragment">
+
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.example.abhishek.onlineparking.adminneopark.ui.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.abhishek.onlineparking.adminneopark.ui.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/lotAndSlotFragment"
+        android:name="com.example.abhishek.onlineparking.adminneopark.ui.LotAndSlotFragment"
+        android:label="fragment_lot_and_slot"
+        tools:layout="@layout/fragment_lot_and_slot" />
+</navigation>

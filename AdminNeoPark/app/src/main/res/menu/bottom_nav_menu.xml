@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashBoardFragment"
+        android:icon="@drawable/home_app_logo_24px"
+        android:checked="true"
+        android:visible="true"
+        android:enabled="true"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/lotAndSlotFragment"
+        android:icon="@drawable/ic_star_empty"
+        android:enabled="true"
+        android:title="Lots And Slots" />
+
+
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/profile"
+        android:enabled="true"
+        android:title="Profile" />
+</menu>

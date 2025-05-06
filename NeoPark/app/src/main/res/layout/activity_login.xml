@@ -1,0 +1,113 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/blue"
+    tools:context=".ui.LoginActivity">
+
+    <ScrollView android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.5">
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="@color/white">
+
+            <TextView android:id="@+id/companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="35dp"
+                android:layout_marginTop="191dp"
+                android:layout_marginBottom="25dp"
+                android:text="@string/app_name"
+                android:textColor="@color/black"
+                android:textSize="45sp" android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/userId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/companyName"
+                android:layout_margin="15dp"
+                android:background="@drawable/squareborder"
+                android:drawableLeft="@drawable/baseline_person"
+                android:drawablePadding="5dp"
+                android:hint="@string/userId"
+                android:minHeight="48dp"
+                android:paddingLeft="10dp" android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColorHint="@color/black"
+                android:textSize="22dp"/>
+
+            <EditText android:id="@+id/userPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_below="@+id/userId"
+                android:layout_margin="15dp"
+                android:background="@drawable/squareborder"
+                android:drawableLeft="@drawable/baseline_security"
+                android:drawablePadding="5dp" android:ems="10" android:hint="@string/userPassword" android:inputType="textPassword"
+                android:minHeight="48dp" android:paddingLeft="10dp" android:paddingTop="5dp"
+                android:paddingBottom="5dp" android:textColorHint="@color/black" android:textSize="22dp"/>
+
+            <TextView android:id="@+id/forgetPassword"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_below="@+id/userPassword" android:layout_alignParentRight="true"
+                android:layout_margin="5dp" android:layout_marginStart="15dp" android:layout_marginTop="19dp"
+                android:layout_marginEnd="15dp" android:layout_marginBottom="15dp" android:minHeight="48dp"
+                android:paddingTop="5dp" android:paddingRight="15dp" android:paddingBottom="5dp"
+                android:text="@string/forgetPassword" android:textColor="@color/blue" android:textSize="16dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/forgetPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:textColor="@color/white"
+                android:background="@drawable/back3" android:text="Login" android:textSize="18dp" android:textStyle="normal"/>
+
+            <LinearLayout android:id="@+id/orButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:layout_below="@+id/loginbutton" android:paddingLeft="15dp" android:paddingRight="15dp">
+                <ImageView android:id="@+id/imageView8" android:layout_width="80dp" android:layout_height="50dp"
+                    app:srcCompat="@drawable/straightline"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OR" android:textColor="@color/black" android:gravity="center"/>
+                <ImageView android:id="@+id/imageView7" android:layout_width="80dp" android:layout_height="50dp"
+                    app:srcCompat="@drawable/straightline"/>
+
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView android:id="@+id/loginWith"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp" android:text="Login with"
+                android:layout_below="@id/orButton" android:textColor="#726969" android:textAlignment="center"/>
+
+            <LinearLayout
+                android:id="@+id/imgsLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginHorizontal="25dp"
+                android:minHeight="48dp"
+                android:layout_below="@id/loginWith"
+                android:background="@drawable/squareborder">
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="20dp"
+                    android:src="@drawable/google_logo"
+                    android:layout_height="20dp"
+                    />
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Google" android:textColor="@color/black" android:textSize="18dp" android:paddingLeft="10dp"/>
+            </LinearLayout>
+            <TextView android:id="@+id/registerbutton"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/imgsLogin" android:gravity="center" android:minHeight="48dp" android:textSize="16dp" android:textColor="@color/blue" android:layout_centerHorizontal="true" android:layout_margin="25dp"
+                android:text="@string/register_button"/>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_7sdp"
+>
+
+        <!-- Plot Title -->
+        <TextView
+            android:id="@+id/labelTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plot Title"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/titleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Plot Title"
+            android:background="@drawable/squareborder"
+            android:padding="@dimen/_7sdp"
+            app:layout_constraintTop_toBottomOf="@id/labelTitle"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/labelTwoSlots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Two-Wheeler Slot Count"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintTop_toBottomOf="@id/titleEditText"
+            app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/twoWheelerSlotsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter No. of Two-Wheeler Slots"
+            android:inputType="number"
+            android:padding="@dimen/_7sdp"
+            android:background="@drawable/squareborder"
+            app:layout_constraintTop_toBottomOf="@id/labelTwoSlots"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/labelTwoTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Two-Wheeler Time"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintTop_toBottomOf="@id/twoWheelerSlotsEditText"
+            app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/twoWheelerTimeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Two-Wheeler Time"
+            android:inputType="text"
+            android:padding="@dimen/_7sdp"
+            android:background="@drawable/squareborder"
+            app:layout_constraintTop_toBottomOf="@id/labelTwoTime"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/labelTwoPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Two-Wheeler Price"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintTop_toBottomOf="@id/twoWheelerTimeEditText"
+            app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/twoWheelerPriceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Two-Wheeler Price"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/_7sdp"
+            android:background="@drawable/squareborder"
+            app:layout_constraintTop_toBottomOf="@id/labelTwoPrice"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/labelFourSlots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Four-Wheeler Slot Count"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintTop_toBottomOf="@id/twoWheelerPriceEditText"
+            app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/fourWheelerSlotsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter No. of Four-Wheeler Slots"
+            android:inputType="number"
+            android:padding="@dimen/_7sdp"
+            android:background="@drawable/squareborder"
+            app:layout_constraintTop_toBottomOf="@id/labelFourSlots"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/labelFourTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Four-Wheeler Time"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintTop_toBottomOf="@id/fourWheelerSlotsEditText"
+            app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/fourWheelerTimeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Four-Wheeler Time"
+            android:inputType="text"
+            android:padding="@dimen/_7sdp"
+            android:background="@drawable/squareborder"
+            app:layout_constraintTop_toBottomOf="@id/labelFourTime"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/labelFourPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Four-Wheeler Price"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintTop_toBottomOf="@id/fourWheelerTimeEditText"
+            app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/fourWheelerPriceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Four-Wheeler Price"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/_7sdp"
+            android:background="@drawable/squareborder"
+            app:layout_constraintTop_toBottomOf="@id/labelFourPrice"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/labelTotalSlots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Slots"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintTop_toBottomOf="@id/fourWheelerPriceEditText"
+            app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/totalSlotsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Slots"
+            android:inputType="none"
+            android:padding="@dimen/_7sdp"
+            android:background="@drawable/squareborder"
+            app:layout_constraintTop_toBottomOf="@id/labelTotalSlots"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/labelDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:layout_constraintTop_toBottomOf="@id/totalSlotsEditText"
+            app:layout_constraintStart_toStartOf="parent" />
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:inputType="none"
+            android:padding="@dimen/_7sdp"
+            android:background="@drawable/squareborder"
+            app:layout_constraintTop_toBottomOf="@id/labelDate"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!-- Button layout -->
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/dateEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Create" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/createPlotProgressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

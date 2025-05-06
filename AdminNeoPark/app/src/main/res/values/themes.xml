@@ -1,0 +1,20 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="Base.Theme.AdminNeoPark" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your light theme here -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOutline">#BDBDBD</item>  <!-- Define colorOutline if not already defined -->
+        <item name="colorSurfaceContainer">#FFFFFF</item>  <!-- Define colorSurfaceContainer if not already defined -->
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+    </style>
+
+    <!-- Custom BottomNavigationView style -->
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="backgroundTint">@color/white</item>
+        <item name="itemIconTint">@color/bottom_nav_icon_color</item>
+        <item name="itemTextColor">@color/bottom_nav_text_color</item>
+    </style>
+
+    <!-- Main theme that extends base -->
+    <style name="Theme.AdminNeoPark" parent="Base.Theme.AdminNeoPark" />
+</resources>
