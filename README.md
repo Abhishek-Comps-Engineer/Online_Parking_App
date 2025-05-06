@@ -18,6 +18,85 @@ This is an Android-based Smart Parking App developed using Java, MVVM Architectu
 
 ---
 
+
+# Tech stack used in your Smart Parking System App (User & Admin)
+
+### 🚀 **Frontend (Android App - Java)**
+
+* **Java** – Android app development language
+  *→ "Builds Android apps using Java"*
+
+* **Android Studio** – IDE for Android development
+  *→ "Develops and tests Android applications"*
+
+* **Material UI** – Google’s design system
+  *→ "Creates clean, intuitive user interface"*
+
+---
+
+### 🧠 **Architecture & Patterns**
+
+* **MVVM Architecture** – Model-View-ViewModel pattern
+  *→ "Separates logic, UI, and data"*
+
+* **ViewModel** – Lifecycle-aware data management
+  *→ "Holds UI data during lifecycle"*
+
+* **LiveData** – Observable data holder
+  *→ "Updates UI when data changes"*
+
+* **Repository Pattern** – Manages data sources
+  *→ "Provides single source of truth"*
+
+---
+
+### 📦 **Database & Caching**
+
+* **Room Database (SQLite)** – Local database solution
+  *→ "Stores structured data offline locally"*
+
+* **Encrypted SharedPreferences** – Secure key-value storage
+  *→ "Stores secure data in preferences"*
+
+---
+
+### ☁️ **Backend & Cloud**
+
+* **Firebase Authentication** – Login & identity services
+  *→ "Handles secure login and signup"*
+
+* **Firebase Realtime Database** – Cloud-hosted JSON database
+  *→ "Stores synced user/plot data"*
+
+---
+
+### 🗺️ **Location & Maps**
+
+* **Google Maps API** – Map rendering & interaction
+  *→ "Shows map and user location"*
+
+* **Geocoder API** – Address from coordinates
+  *→ "Converts location to readable address"*
+
+---
+
+### 🔧 **Networking & APIs**
+
+* **Retrofit** – REST API client
+  *→ "Fetches data from web services"*
+
+* **FastAPI** *(if used in backend)* – Python backend framework
+  *→ "Builds fast RESTful backend APIs"*
+
+---
+
+### 🔄 **Background Tasks & Sync**
+
+* **WorkManager** – Background task scheduler
+  *→ "Runs background sync or upload"*
+
+
+------
 ## 📲 Setup Instructions
 
 ### 1. Clone the Repository
