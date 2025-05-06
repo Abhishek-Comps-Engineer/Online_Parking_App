@@ -42,26 +42,33 @@ In your `AndroidManifest.xml` (usually in `app/src/main/AndroidManifest.xml`), a
 
 
 
-3. Add google-services.json
-Go to Firebase Console
+3. ## 🔧 Firebase Setup
 
-Choose your project → Project settings → Add app → Android
 
-Download the google-services.json
+### 1️⃣ Add `google-services.json`
+- Go to [Firebase Console](https://console.firebase.google.com/)
+- Select your project → Project Settings → Add App → Android
+- Download the `google-services.json`
+- Place it in your project at:
 
-Place it at:
+### 2️⃣ Update Gradle Files
 
-bash
-Copy
-Edit
-<project-root>/app/google-services.json
-Also ensure build.gradle files include:
+**Project-level `build.gradle`:**
+```gradle
+buildscript {
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.15' // Use latest
+    }
+}
 
-Project-level:
 
-gradle
-Copy
-Edit
-classpath 'com.google.gms:google-services:4.3.15' // latest
 App-level:
 apply plugin: 'com.google.gms.google-services'
+
+
+
+
+
+
+
+...........................................................................
