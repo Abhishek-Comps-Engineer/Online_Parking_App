@@ -66,6 +66,16 @@ App-level:
 apply plugin: 'com.google.gms.google-services'
 
 
+Abhi@LAPTOP-41PERR33 MINGW64 /d/Online_Parking_App (main)
+$ ## 📸 Screenshots
+
+### 👤 AdminNeoPark
+![AdminNeoPark](screenshots/user_panel.png)
+
+### 🛠️ NeoPark
+![NeoPark](screenshots/admin_panel.png)
+bash: ![AdminNeoPark]: event not found
+bash: ![NeoPark]: event not found
 
 
 
